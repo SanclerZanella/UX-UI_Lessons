@@ -1,3 +1,8 @@
+ var mapsAPIKey = config.googleMapKey;
+ let mapRender = document.getElementById("gMaps");
+
+ mapRender.setAttribute("src", `https://maps.googleapis.com/maps/api/js?key=${mapsAPIKey}&callback=initMap`);
+ 
  function initMap() {
             var map = new google.maps.Map(document.getElementById("map"), {
                 zoom: 3,
